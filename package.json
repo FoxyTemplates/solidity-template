@@ -59,6 +59,9 @@
     "test": "yarn run typechain && hardhat test",
     "typechain": "hardhat typechain",
     "build": "yarn run compile",
-    "node": "npx hardhat node"
+    "node": "hardhat node",
+    "deploy:hardhat": "hardhat run --network hardhat scripts/deploy.ts",
+    "deploy:mainnet": "hardhat run --network mainnet scripts/deploy.ts",
+    "deploy:kovan": "hardhat run --network kovan scripts/deploy.ts"
   }
 }
