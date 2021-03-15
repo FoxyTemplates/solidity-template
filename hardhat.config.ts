@@ -64,6 +64,7 @@ const config: HardhatUserConfig = {
         url: "https://" + "mainnet" + ".infura.io/v3/" + infuraApiKey,
       },
     },
+    mainnet: createTestnetConfig("mainnet"),
     goerli: createTestnetConfig("goerli"),
     kovan: createTestnetConfig("kovan"),
     rinkeby: createTestnetConfig("rinkeby"),
@@ -76,7 +77,7 @@ const config: HardhatUserConfig = {
     tests: "./test",
   },
   solidity: {
-    version: "0.8.1",
+    version: "0.5.17",
     settings: {
       // https://hardhat.org/hardhat-network/#solidity-optimizer-support
       optimizer: {
